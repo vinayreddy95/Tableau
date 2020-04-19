@@ -1,0 +1,1141 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20201.20.0326.1623                               -->
+<workbook original-version='18.1' source-build='2020.1.2 (20201.20.0326.1623)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='complete' inline='true' name='federated.0n82zsa1ni5t5n1b61gxm0rppysu' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='complete' name='textscan.059dmna0zcoa9h11jk69t1enezmr'>
+            <connection class='textscan' directory='/Users/apple/Downloads/covid19-corona-virus-india-dataset' filename='complete.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.059dmna0zcoa9h11jk69t1enezmr' name='complete.csv' table='[complete#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='date' name='Date' ordinal='0' />
+            <column datatype='string' name='Name of State / UT' ordinal='1' />
+            <column datatype='integer' name='Total Confirmed cases (Indian National)' ordinal='2' />
+            <column datatype='integer' name='Total Confirmed cases ( Foreign National )' ordinal='3' />
+            <column datatype='integer' name='Cured/Discharged/Migrated' ordinal='4' />
+            <column datatype='real' name='Latitude' ordinal='5' />
+            <column datatype='real' name='Longitude' ordinal='6' />
+            <column datatype='integer' name='Death' ordinal='7' />
+            <column datatype='integer' name='Total Confirmed cases' ordinal='8' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[complete.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[complete.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Name of State / UT</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Name of State / UT]</local-name>
+            <parent-name>[complete.csv]</parent-name>
+            <remote-alias>Name of State / UT</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Confirmed cases (Indian National)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Confirmed cases (Indian National)]</local-name>
+            <parent-name>[complete.csv]</parent-name>
+            <remote-alias>Total Confirmed cases (Indian National)</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Confirmed cases ( Foreign National )</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Confirmed cases ( Foreign National )]</local-name>
+            <parent-name>[complete.csv]</parent-name>
+            <remote-alias>Total Confirmed cases ( Foreign National )</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cured/Discharged/Migrated</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Cured/Discharged/Migrated]</local-name>
+            <parent-name>[complete.csv]</parent-name>
+            <remote-alias>Cured/Discharged/Migrated</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Latitude]</local-name>
+            <parent-name>[complete.csv]</parent-name>
+            <remote-alias>Latitude</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Longitude]</local-name>
+            <parent-name>[complete.csv]</parent-name>
+            <remote-alias>Longitude</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Death</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Death]</local-name>
+            <parent-name>[complete.csv]</parent-name>
+            <remote-alias>Death</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Confirmed cases</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Confirmed cases]</local-name>
+            <parent-name>[complete.csv]</parent-name>
+            <remote-alias>Total Confirmed cases</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Label_in' datatype='integer' name='[Calculation_48906317632909317]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='0' />
+      </column>
+      <column aggregation='Avg' datatype='real' name='[Latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[Longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column datatype='string' name='[Name of State / UT]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <layout dim-ordering='alphabetic' dim-percentage='0.339056' measure-ordering='alphabetic' measure-percentage='0.660944' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='titanic' inline='true' name='federated.1ox70rw04rc9qy1e55qdx0iv5rqc' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='complete' name='textscan.18ubrcc0p6x0u81gmy2mo01oeeq7'>
+            <connection class='textscan' directory='/Users/apple/Downloads/covid19-corona-virus-india-dataset' filename='complete.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.18ubrcc0p6x0u81gmy2mo01oeeq7' name='complete.csv' table='[complete#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='date' name='Date' ordinal='0' />
+            <column datatype='string' name='Name of State / UT' ordinal='1' />
+            <column datatype='integer' name='Total Confirmed cases (Indian National)' ordinal='2' />
+            <column datatype='integer' name='Total Confirmed cases ( Foreign National )' ordinal='3' />
+            <column datatype='integer' name='Cured/Discharged/Migrated' ordinal='4' />
+            <column datatype='real' name='Latitude' ordinal='5' />
+            <column datatype='real' name='Longitude' ordinal='6' />
+            <column datatype='integer' name='Death' ordinal='7' />
+            <column datatype='integer' name='Total Confirmed cases' ordinal='8' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[complete.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[complete.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Name of State / UT</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Name of State / UT]</local-name>
+            <parent-name>[complete.csv]</parent-name>
+            <remote-alias>Name of State / UT</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Confirmed cases (Indian National)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Confirmed cases (Indian National)]</local-name>
+            <parent-name>[complete.csv]</parent-name>
+            <remote-alias>Total Confirmed cases (Indian National)</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Confirmed cases ( Foreign National )</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Confirmed cases ( Foreign National )]</local-name>
+            <parent-name>[complete.csv]</parent-name>
+            <remote-alias>Total Confirmed cases ( Foreign National )</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cured/Discharged/Migrated</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Cured/Discharged/Migrated]</local-name>
+            <parent-name>[complete.csv]</parent-name>
+            <remote-alias>Cured/Discharged/Migrated</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Latitude]</local-name>
+            <parent-name>[complete.csv]</parent-name>
+            <remote-alias>Latitude</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Longitude]</local-name>
+            <parent-name>[complete.csv]</parent-name>
+            <remote-alias>Longitude</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Death</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Death]</local-name>
+            <parent-name>[complete.csv]</parent-name>
+            <remote-alias>Death</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Confirmed cases</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Confirmed cases]</local-name>
+            <parent-name>[complete.csv]</parent-name>
+            <remote-alias>Total Confirmed cases</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Rank' datatype='integer' name='[Calculation_48906317625544708]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='RANK_UNIQUE(sum([Total Confirmed cases]), &apos;desc&apos;)'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column aggregation='Avg' datatype='real' name='[Latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[Longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column datatype='string' name='[Name of State / UT]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='integer' name='[Total Confirmed cases]' role='measure' type='quantitative' />
+      <column-instance column='[Name of State / UT]' derivation='None' name='[none:Name of State / UT:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Total Confirmed cases]' derivation='Sum' name='[sum:Total Confirmed cases:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_48906317625544708]' derivation='User' name='[usr:Calculation_48906317625544708:qk:1]' pivot='key' type='quantitative'>
+        <table-calc ordering-field='' ordering-type='Field' />
+      </column-instance>
+      <layout dim-ordering='alphabetic' dim-percentage='0.298283' measure-ordering='alphabetic' measure-percentage='0.701717' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:F2:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;1st class&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;class&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;3rd class&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2nd class&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1ox70rw04rc9qy1e55qdx0iv5rqc].[usr:Calculation_48906317625544708:qk:1]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0n82zsa1ni5t5n1b61gxm0rppysu].[sum:Calculation_48906317632909317:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1ox70rw04rc9qy1e55qdx0iv5rqc].[sum:Total Confirmed cases:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Name of State / UT:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Goa&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Union Territory of Chandigarh&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Andaman and Nicobar Islands&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Mizoram&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Bihar&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Rajasthan&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Jammu and Kashmir&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Uttarakhand&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Gujarat&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Union Territory of Jammu and Kashmir&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Chandigarh&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Tamil Nadu&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Maharashtra&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Andhra Pradesh&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Odisha&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Ladakh&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Chhattisgarh&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Telengana&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Jharkhand&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;West Bengal&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Karnataka&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Madhya Pradesh&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Manipur&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Haryana&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Union Territory of Ladakh&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Delhi&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Tripura&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Arunachal Pradesh&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Puducherry&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Kerala&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Himachal Pradesh&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Uttar Pradesh&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Assam&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Punjab&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <datasource-dependencies datasource='federated.0n82zsa1ni5t5n1b61gxm0rppysu'>
+        <column caption='Label_in' datatype='integer' name='[Calculation_48906317632909317]' role='measure' type='quantitative'>
+          <calculation class='tableau' formula='0' />
+        </column>
+        <column-instance column='[Calculation_48906317632909317]' derivation='Sum' name='[sum:Calculation_48906317632909317:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Corona Virus India Racing Bar Chart'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#e15759'>&lt;Sheet Name&gt; </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='titanic' name='federated.1ox70rw04rc9qy1e55qdx0iv5rqc' />
+            <datasource caption='complete' name='federated.0n82zsa1ni5t5n1b61gxm0rppysu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0n82zsa1ni5t5n1b61gxm0rppysu'>
+            <column caption='Label_in' datatype='integer' name='[Calculation_48906317632909317]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='0' />
+            </column>
+            <column datatype='integer' name='[Total Confirmed cases]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_48906317632909317]' derivation='Sum' name='[sum:Calculation_48906317632909317:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total Confirmed cases]' derivation='Sum' name='[sum:Total Confirmed cases:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1ox70rw04rc9qy1e55qdx0iv5rqc'>
+            <column caption='Rank' datatype='integer' name='[Calculation_48906317625544708]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='RANK_UNIQUE(sum([Total Confirmed cases]), &apos;desc&apos;)'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Name of State / UT]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column datatype='integer' name='[Total Confirmed cases]' role='measure' type='quantitative' />
+            <column-instance column='[Name of State / UT]' derivation='None' name='[none:Name of State / UT:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total Confirmed cases]' derivation='Sum' name='[sum:Total Confirmed cases:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Day-Trunc' name='[tdy:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_48906317625544708]' derivation='User' name='[usr:Calculation_48906317625544708:ok:2]' pivot='key' type='ordinal'>
+              <table-calc ordering-field='[federated.1ox70rw04rc9qy1e55qdx0iv5rqc].[Name of State / UT]' ordering-type='Field' />
+            </column-instance>
+            <column-instance column='[Calculation_48906317625544708]' derivation='User' name='[usr:Calculation_48906317625544708:qk:2]' pivot='key' type='quantitative'>
+              <table-calc ordering-field='[federated.1ox70rw04rc9qy1e55qdx0iv5rqc].[Name of State / UT]' ordering-type='Field' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1ox70rw04rc9qy1e55qdx0iv5rqc].[usr:Calculation_48906317625544708:qk:2]' included-values='in-range'>
+            <min>1</min>
+            <max>10</max>
+          </filter>
+          <slices>
+            <column>[federated.1ox70rw04rc9qy1e55qdx0iv5rqc].[usr:Calculation_48906317625544708:qk:2]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0n82zsa1ni5t5n1b61gxm0rppysu].[sum:Calculation_48906317632909317:qk]' field-type='quantitative' fold='true' scope='cols' synchronized='true' type='space' />
+            <format attr='display' class='0' field='[federated.0n82zsa1ni5t5n1b61gxm0rppysu].[sum:Calculation_48906317632909317:qk]' scope='cols' value='false' />
+            <format attr='display' class='0' field='[federated.1ox70rw04rc9qy1e55qdx0iv5rqc].[sum:Total Confirmed cases:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.1ox70rw04rc9qy1e55qdx0iv5rqc].[usr:Calculation_48906317625544708:ok:2]' value='33' />
+            <format attr='color' value='#000000' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.1ox70rw04rc9qy1e55qdx0iv5rqc].[usr:Calculation_48906317625544708:ok:2]' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='annotation'>
+            <format attr='stroke-color' id='annotation_0' value='#76b7b2' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.3513259887695312' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#76b7b2' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1ox70rw04rc9qy1e55qdx0iv5rqc].[sum:Total Confirmed cases:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1ox70rw04rc9qy1e55qdx0iv5rqc].[none:Name of State / UT:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.3513259887695312' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#76b7b2' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0n82zsa1ni5t5n1b61gxm0rppysu].[sum:Calculation_48906317632909317:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.1ox70rw04rc9qy1e55qdx0iv5rqc].[none:Name of State / UT:nk]' />
+              <text column='[federated.0n82zsa1ni5t5n1b61gxm0rppysu].[sum:Total Confirmed cases:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontalignment='0'>&lt;</run>
+                <run fontalignment='0'>[federated.1ox70rw04rc9qy1e55qdx0iv5rqc].[none:Name of State / UT:nk]</run>
+                <run fontalignment='0'>&gt; : &lt;</run>
+                <run fontalignment='0'>[federated.0n82zsa1ni5t5n1b61gxm0rppysu].[sum:Total Confirmed cases:qk]</run>
+                <run fontalignment='0'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.3513259887695312' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#76b7b2' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ox70rw04rc9qy1e55qdx0iv5rqc].[usr:Calculation_48906317625544708:ok:2]</rows>
+        <cols>([federated.1ox70rw04rc9qy1e55qdx0iv5rqc].[sum:Total Confirmed cases:qk] + [federated.0n82zsa1ni5t5n1b61gxm0rppysu].[sum:Calculation_48906317632909317:qk])</cols>
+        <pages>
+          <column>[federated.1ox70rw04rc9qy1e55qdx0iv5rqc].[tdy:Date:ok]</column>
+        </pages>
+        <annotations>
+          <annotation class='area' id='0' text-pinx='0.5' text-piny='0.5' text-width-delta='-18'>
+            <formatted-text>
+              <run bold='true' fontsize='15'>&lt;Page Name&gt;</run>
+            </formatted-text>
+            <top-left>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='1352.2548746518107'>
+                  <node-reference>
+                    <axis>[federated.1ox70rw04rc9qy1e55qdx0iv5rqc].[sum:Total Confirmed cases:qk]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord cell-offset='0.787879'>
+                  <node-reference>
+                    <fields>
+                      <field>[federated.1ox70rw04rc9qy1e55qdx0iv5rqc].[usr:Calculation_48906317625544708:ok:2]</field>
+                    </fields>
+                    <multibucket>
+                      <bucket>7</bucket>
+                    </multibucket>
+                  </node-reference>
+                </y-coord>
+                <page-reference>
+                  <fields>
+                    <field>[federated.1ox70rw04rc9qy1e55qdx0iv5rqc].[tdy:Date:ok]</field>
+                  </fields>
+                  <multibucket>
+                    <bucket>#2020-04-11 00:00:00#</bucket>
+                  </multibucket>
+                </page-reference>
+              </visual-coordinate>
+            </top-left>
+            <bottom-right>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='2001.1922005571032'>
+                  <node-reference>
+                    <axis>[federated.1ox70rw04rc9qy1e55qdx0iv5rqc].[sum:Total Confirmed cases:qk]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord cell-offset='0.545455'>
+                  <node-reference>
+                    <fields>
+                      <field>[federated.1ox70rw04rc9qy1e55qdx0iv5rqc].[usr:Calculation_48906317625544708:ok:2]</field>
+                    </fields>
+                    <multibucket>
+                      <bucket>9</bucket>
+                    </multibucket>
+                  </node-reference>
+                </y-coord>
+                <page-reference>
+                  <fields>
+                    <field>[federated.1ox70rw04rc9qy1e55qdx0iv5rqc].[tdy:Date:ok]</field>
+                  </fields>
+                  <multibucket>
+                    <bucket>#2020-04-11 00:00:00#</bucket>
+                  </multibucket>
+                </page-reference>
+              </visual-coordinate>
+            </bottom-right>
+            <text x='0.5' y='0.5' />
+          </annotation>
+        </annotations>
+      </table>
+      <simple-id uuid='{1448FBD8-6BF3-4570-990B-ED8C36353085}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='titanic' name='federated.1ox70rw04rc9qy1e55qdx0iv5rqc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ox70rw04rc9qy1e55qdx0iv5rqc'>
+            <column caption='Rank' datatype='integer' name='[Calculation_48906317625544708]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='RANK_UNIQUE(sum([Total Confirmed cases]), &apos;desc&apos;)'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column datatype='string' name='[Name of State / UT]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column datatype='integer' name='[Total Confirmed cases]' role='measure' type='quantitative' />
+            <column-instance column='[Name of State / UT]' derivation='None' name='[none:Name of State / UT:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total Confirmed cases]' derivation='Sum' name='[sum:Total Confirmed cases:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_48906317625544708]' derivation='User' name='[usr:Calculation_48906317625544708:ok:2]' pivot='key' type='ordinal'>
+              <table-calc ordering-field='[federated.1ox70rw04rc9qy1e55qdx0iv5rqc].[Name of State / UT]' ordering-type='Field' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ox70rw04rc9qy1e55qdx0iv5rqc].[usr:Calculation_48906317625544708:ok:2]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[usr:Calculation_48906317625544708:ok:2]' member='1' />
+              <groupfilter function='member' level='[usr:Calculation_48906317625544708:ok:2]' member='2' />
+              <groupfilter function='member' level='[usr:Calculation_48906317625544708:ok:2]' member='3' />
+              <groupfilter function='member' level='[usr:Calculation_48906317625544708:ok:2]' member='4' />
+              <groupfilter function='member' level='[usr:Calculation_48906317625544708:ok:2]' member='5' />
+              <groupfilter function='member' level='[usr:Calculation_48906317625544708:ok:2]' member='6' />
+              <groupfilter function='member' level='[usr:Calculation_48906317625544708:ok:2]' member='7' />
+              <groupfilter function='member' level='[usr:Calculation_48906317625544708:ok:2]' member='8' />
+              <groupfilter function='member' level='[usr:Calculation_48906317625544708:ok:2]' member='9' />
+              <groupfilter function='member' level='[usr:Calculation_48906317625544708:ok:2]' member='10' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1ox70rw04rc9qy1e55qdx0iv5rqc].[usr:Calculation_48906317625544708:ok:2]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1ox70rw04rc9qy1e55qdx0iv5rqc].[none:Name of State / UT:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1ox70rw04rc9qy1e55qdx0iv5rqc].[usr:Calculation_48906317625544708:ok:2]</rows>
+        <cols>[federated.1ox70rw04rc9qy1e55qdx0iv5rqc].[sum:Total Confirmed cases:qk]</cols>
+      </table>
+      <simple-id uuid='{9FFAA86E-A4BC-4405-ADFE-BD7092979238}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='51'>
+    <window class='worksheet' maximized='true' name='Corona Virus India Racing Bar Chart'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card type='currpage' />
+            <card pane-specification-id='2' param='[federated.1ox70rw04rc9qy1e55qdx0iv5rqc].[none:Name of State / UT:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <current-page>
+          <multibucket>
+            <bucket>#2020-04-11 00:00:00#</bucket>
+          </multibucket>
+        </current-page>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1ox70rw04rc9qy1e55qdx0iv5rqc].[none:F2:nk]</field>
+            <field>[federated.1ox70rw04rc9qy1e55qdx0iv5rqc].[none:F4:nk]</field>
+            <field>[federated.1ox70rw04rc9qy1e55qdx0iv5rqc].[none:F5:nk]</field>
+            <field>[federated.1ox70rw04rc9qy1e55qdx0iv5rqc].[none:Name of State / UT:nk]</field>
+            <field>[federated.1ox70rw04rc9qy1e55qdx0iv5rqc].[yr:Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{785097DB-7642-4A3A-BF3B-934E3CBD83B0}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='typeinlist' param='[federated.1ox70rw04rc9qy1e55qdx0iv5rqc].[usr:Calculation_48906317625544708:ok:2]' show-morefewerbutton='false' type='filter' />
+            <card pane-specification-id='1' param='[federated.1ox70rw04rc9qy1e55qdx0iv5rqc].[none:Name of State / UT:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0n82zsa1ni5t5n1b61gxm0rppysu].[yr:Date:ok]</field>
+            <field>[federated.1ox70rw04rc9qy1e55qdx0iv5rqc].[:Measure Names]</field>
+            <field>[federated.1ox70rw04rc9qy1e55qdx0iv5rqc].[none:Name of State / UT:nk]</field>
+            <field>[federated.1ox70rw04rc9qy1e55qdx0iv5rqc].[usr:Calculation_48906317625544708:ok:2]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{8B12F805-A385-47F9-8497-6A4FDFED53CC}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Corona Virus India Racing Bar Chart' width='192'>
+      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
+      AsGS8f8DJmxSZtv6RWQAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
